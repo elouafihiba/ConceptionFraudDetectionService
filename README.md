@@ -84,10 +84,7 @@ Nous avons adopté une approche qui vise
 
 ![fraud detection system](./diagrammes/class.png)
 
-Ce diagramme de classe représente la structure des entités clés impliquées 
-dans notre système de détection de fraude bancaire. Les classes sont conçues 
-pour capturer les différents aspects des traitements, règles, sources de données, 
-événements et alertes associés à la détection de fraude.
+Ce diagramme de classe représente la définition des règles de gestion.
 
 #### Classe TreatmentResult: 
 Cette classe comprend les attributs suivants :
