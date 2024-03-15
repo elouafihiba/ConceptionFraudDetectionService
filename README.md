@@ -56,6 +56,99 @@ Les alertes sont ensuite transmises aux parties concernées pour appliquer les a
 ---
 Ce système modulaire et interconnecté permet une gestion efficace des événements de fraude, en garantissant une détection rapide et précise tout en offrant la flexibilité nécessaire pour s'adapter aux besoins spécifiques de chaque institution financière.
 
+## 3. Conception du Systeme:
+
+### Diagramme de use case :
+
+![fraud detection system](./diagrammes/useCase.png)
+
+Ce diagramme de cas d'utilisation représente le processus de détection des fraudes bancaires.
+Il met en lumière les interactions entre les différents acteurs et les fonctionnalités clés du système.
+
+#### Acteurs Principaux :
+
+- **Fraud Detection Admin** : Cet acteur est responsable de la définition 
+des règles de gestion pour la détection des fraudes. Il a la capacité 
+de définir les événements, les sources de données, les traitements 
+et les alertes associées à la détection des fraudes. Il configure également 
+les règles de gestion avec une relation incluse du cas d'utilisation 
+"Validation Workflow".
+
+- **Adria Banking System** : Cette application bancaire agit en tant 
+qu'acteur principal dans l'envoi et la gestion des événements liés aux 
+transactions bancaires. Elle interagit avec le système de détection 
+de fraude en fournissant des données pertinentes pour l'analyse.
+Nous avons adopté une approche qui vise 
+à garantir la standardisation et l'interopérabilité avec différents systèmes bancaires.
+
+
+### Diagramme de classe :
+
+![fraud detection system](./diagrammes/class.png)
+
+Ce diagramme de classe représente la structure des entités clés impliquées 
+dans notre système de détection de fraude bancaire. Les classes sont conçues 
+pour capturer les différents aspects des traitements, règles, sources de données, 
+événements et alertes associés à la détection de fraude.
+
+#### Classe TreatmentResult: 
+Cette classe comprend les attributs suivants :
+
+- code : Le code de résultat du traitement.
+- name : Le nom du traitement.
+- description : La description détaillée du traitement.
+- severity : L'importance du résultat, représentée par une énumération avec les valeurs "low", "medium" et "high".
+
+#### Classe Treatment : 
+Cette classe comprend les attributs suivants :
+
+- id : L'identifiant unique du traitement.
+- name : Le nom du traitement.
+- type : Le type de traitement, représenté par une énumération avec les valeurs "RESTful", "SOAP", "Serverless", "Broker" ou "Queue".
+
+#### Classe Rule : 
+Cette classe comprend les attributs suivants :
+
+- code : Le code de la règle.
+- name : Le nom de la règle.
+- description : La description détaillée de la règle.
+- 
+#### Classe DataSource : 
+Cette classe comprend les attributs suivants :
+
+- id : L'identifiant unique de la source de données.
+- name : Le nom de la source de données.
+- type : Le type de la source de données, représenté par une énumération avec les valeurs "SQL Database", "Web Service" ou "Cache Database".
+
+#### Classe Event : 
+Cette classe comprend les attributs suivants :
+
+- id : L'identifiant unique de l'événement.
+- name : Le nom de l'événement.
+- description : La description détaillée de l'événement.
+- type : Le type de l'événement.
+
+#### Classe Alert : 
+Cette classe comprend les attributs suivants :
+
+- code : Le code de l'alerte.
+- body : Le contenu de l'alerte.
+
+#### Classe AlertLevel : 
+Cette classe comprend les attributs suivants :
+
+- id : L'identifiant unique du niveau d'alerte.
+- name : Le nom du niveau d'alerte.
+
+### Diagramme de communication :
+
+![fraud detection system](./diagrammes/communication.png)
+
+### Diagramme de sequence :
+
+![fraud detection system](./diagrammes/sequence.png)
+
+
 
 
 
