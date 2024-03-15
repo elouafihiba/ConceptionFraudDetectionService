@@ -70,9 +70,7 @@ Il met en lumière les interactions entre les différents acteurs et les fonctio
 - **Fraud Detection Admin** : Cet acteur est responsable de la définition 
 des règles de gestion pour la détection des fraudes. Il a la capacité 
 de définir les événements, les sources de données, les traitements 
-et les alertes associées à la détection des fraudes. Il configure également 
-les règles de gestion avec une relation incluse du cas d'utilisation 
-"Validation Workflow".
+et les alertes associées à la détection des fraudes. 
 
 - **Adria Banking System** : Cette application bancaire agit en tant 
 qu'acteur principal dans l'envoi et la gestion des événements liés aux 
@@ -86,10 +84,7 @@ Nous avons adopté une approche qui vise
 
 ![fraud detection system](./diagrammes/class.png)
 
-Ce diagramme de classe représente la structure des entités clés impliquées 
-dans notre système de détection de fraude bancaire. Les classes sont conçues 
-pour capturer les différents aspects des traitements, règles, sources de données, 
-événements et alertes associés à la détection de fraude.
+Ce diagramme de classe représente la définition des règles de gestion.
 
 #### Classe Rule :
 Cette classe comprend les attributs suivants :
