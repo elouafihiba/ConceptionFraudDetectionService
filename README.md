@@ -163,7 +163,7 @@ et réalise les opérations suivantes :
 
 - extractEventClassificationParameter(): Extrait les paramètres de
 classification d'événement pour le Parameter Service.
--  eventClassification(event, rules): Classe l'événement en fonction
+- eventClassification(event, rules): Classe l'événement en fonction
 des règles définies.
 - extractRulesParameters[eventClass]: Extrait les paramètres 
 des règles pour le Parameter Service.
@@ -191,6 +191,44 @@ Ce service est chargé de la gestion et de la transmission des alertes généré
 ### Diagramme de sequence :
 
 ![fraud detection system](./diagrammes/sequence.png)
+
+Nous devons d'abord identifier les participants et leurs interactions.
+
+#### Participants (services) :
+
+- Banking System
+- Fraud Detection Service
+- Parameter Service
+- Data Preparation Service
+- Transaction Analysis Service
+- Alert Service
+
+#### Interactions (séquence) :
+
+- Banking System envoie une alerte à Fraud Detection Service.
+- Fraud Detection Service extrait les paramètres de classification de l'événement.
+- Fraud Detection Service classifie l'événement en utilisant des règles.
+- Fraud Detection Service extrait les paramètres de règles.
+- Fraud Detection Service extrait les sources de données, les traitements et les niveaux d'alerte.
+- Fraud Detection Service extrait les données pertinentes des sources de données spécifiées.
+- Data Preparation Service prépare les données pour l'analyse.
+- Data Preparation Service envoie les données préparées à Transaction Analysis Service.
+- Transaction Analysis Service analyse les données avec les traitements spécifiés.
+- Transaction Analysis Service envoie les résultats d'analyse à Alert Service.
+- Alert Service extrait les associations entre les résultats d'analyse et les niveaux d'alerte.
+- Alert Service analyse les résultats d'analyse et génère des alertes.
+
+#### Interactions (communication) :
+
+- Banking System envoie une alerte à Fraud Detection Service.
+- Fraud Detection Service communique avec Parameter Service pour extraire les paramètres de classification de l'événement.
+- Fraud Detection Service communique avec Parameter Service pour extraire les paramètres de règles.
+- Fraud Detection Service communique avec Parameter Service pour extraire les sources de données, traitements et niveaux d'alerte.
+- Fraud Detection Service communique avec Data Preparation Service pour extraire les données pertinentes des sources de données spécifiées.
+- Data Preparation Service communique avec Transaction Analysis Service pour envoyer les données préparées.
+- Transaction Analysis Service communique avec Alert Service pour envoyer les résultats d'analyse.
+- Alert Service communique avec Parameter Service pour extraire les associations entre les résultats d'analyse et les niveaux d'alerte.
+- Alert Service communique avec lui-même pour analyser les résultats d'analyse et générer des alertes.
 
 
 
