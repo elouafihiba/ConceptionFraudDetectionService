@@ -91,6 +91,35 @@ dans notre système de détection de fraude bancaire. Les classes sont conçues
 pour capturer les différents aspects des traitements, règles, sources de données, 
 événements et alertes associés à la détection de fraude.
 
+#### Classe Rule :
+Cette classe comprend les attributs suivants :
+
+- code : Le code de la règle.
+- name : Le nom de la règle.
+- description : La description détaillée de la règle.
+
+#### Classe Event :
+Cette classe comprend les attributs suivants :
+
+- id : L'identifiant unique de l'événement.
+- name : Le nom de l'événement.
+- description : La description détaillée de l'événement.
+- type : Le type de l'événement.
+
+#### Classe DataSource :
+Cette classe comprend les attributs suivants :
+
+- id : L'identifiant unique de la source de données.
+- name : Le nom de la source de données.
+- type : Le type de la source de données, représenté par une énumération avec les valeurs "SQL Database", "Web Service" ou "Cache Database".
+
+#### Classe Treatment :
+Cette classe comprend les attributs suivants :
+
+- id : L'identifiant unique du traitement.
+- name : Le nom du traitement.
+- type : Le type de traitement, représenté par une énumération avec les valeurs "RESTful", "SOAP", "Serverless", "Broker" ou "Queue".
+
 #### Classe TreatmentResult: 
 Cette classe comprend les attributs suivants :
 
@@ -98,35 +127,6 @@ Cette classe comprend les attributs suivants :
 - name : Le nom du traitement.
 - description : La description détaillée du traitement.
 - severity : L'importance du résultat, représentée par une énumération avec les valeurs "low", "medium" et "high".
-
-#### Classe Treatment : 
-Cette classe comprend les attributs suivants :
-
-- id : L'identifiant unique du traitement.
-- name : Le nom du traitement.
-- type : Le type de traitement, représenté par une énumération avec les valeurs "RESTful", "SOAP", "Serverless", "Broker" ou "Queue".
-
-#### Classe Rule : 
-Cette classe comprend les attributs suivants :
-
-- code : Le code de la règle.
-- name : Le nom de la règle.
-- description : La description détaillée de la règle.
-- 
-#### Classe DataSource : 
-Cette classe comprend les attributs suivants :
-
-- id : L'identifiant unique de la source de données.
-- name : Le nom de la source de données.
-- type : Le type de la source de données, représenté par une énumération avec les valeurs "SQL Database", "Web Service" ou "Cache Database".
-
-#### Classe Event : 
-Cette classe comprend les attributs suivants :
-
-- id : L'identifiant unique de l'événement.
-- name : Le nom de l'événement.
-- description : La description détaillée de l'événement.
-- type : Le type de l'événement.
 
 #### Classe Alert : 
 Cette classe comprend les attributs suivants :
