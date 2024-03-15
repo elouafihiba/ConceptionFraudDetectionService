@@ -144,6 +144,50 @@ Cette classe comprend les attributs suivants :
 
 ![fraud detection system](./diagrammes/communication.png)
 
+Ce diagramme de communication décrit le flux de données entre 
+différents services impliqués dans notre système de détection 
+de fraude bancaire. Les interactions entre les services permettent
+de traiter les événements, d'analyser les données et de générer 
+des alertes en cas de fraude potentielle.
+
+#### Banking System : 
+Ce service est responsable de l'envoi d'événements vers 
+le service de détection de fraude (Fraud Detection Service) 
+et implémente la méthode suivante :
+
+- send(event): Envoie un événement au service de détection de fraude.
+
+#### Fraud Detection Service : 
+Ce service est au cœur du processus de détection de fraude
+et réalise les opérations suivantes :
+
+- extractEventClassificationParameter(): Extrait les paramètres de
+classification d'événement pour le Parameter Service.
+-  eventClassification(event, rules): Classe l'événement en fonction
+des règles définies.
+- extractRulesParameters[eventClass]: Extrait les paramètres 
+des règles pour le Parameter Service.
+- extractDataSource(rulesParameters[]): Extrait les sources de données pour l'analyse.
+- extractTreatment(rulesParameters[]): Extrait les traitements à appliquer.
+- extractAlertLevels(rulesParameters[]): Extrait les niveaux d'alerte associés aux règles.
+- extractData(datasource, event): Prépare les données pour l'analyse.
+- analyse(analysisData, Treatements[]): Effectue l'analyse des transactions pour détecter les fraudes.
+- sendAnalysisResults(analysisResult[]): Envoie les résultats de l'analyse au service d'alerte.
+- extractAssociations(): Extrait les associations entre les résultats des traitements et les niveaux d'alerte pour le Parameter Service.
+- analyseResults(analysisResult[], TreatResult_AlertLevelAssociationParameters[]): Analyse les résultats de l'analyse et génère des alertes.
+
+#### Parameter Service : 
+Ce service gère la récupération et le traitement des paramètres nécessaires à l'analyse et à la génération d'alertes.
+
+#### Data Preparation Service : 
+Ce service prépare les données pour l'analyse en extrayant les informations pertinentes des sources de données.
+
+#### Transaction Analysis Service : 
+Ce service analyse les données des transactions pour détecter les schémas de fraude potentiels.
+
+#### Alert Service : 
+Ce service est chargé de la gestion et de la transmission des alertes générées par le système de détection de fraude.
+
 ### Diagramme de sequence :
 
 ![fraud detection system](./diagrammes/sequence.png)
