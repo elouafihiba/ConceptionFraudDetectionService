@@ -156,14 +156,14 @@ Cette classe comprend les attributs suivants :
 
 - Banking System envoie une alerte à Fraud Detection Service.
 - Fraud Detection Service communique avec Parameter Service pour extraire les paramètres de classification de l'événement.
-- Fraud Detection Service communique avec Parameter Service pour extraire les paramètres de règles.
-- Fraud Detection Service communique avec Parameter Service pour extraire les sources de données, traitements et niveaux d'alerte.
+- Fraud Detection Service s'occupe de la classification des evenements.
+- Fraud Detection Service communique avec Parameter Service pour extraire les parametres des regles.
+- Fraud Detection Service s'occupe de l'extraction des sources de données,l'extraction des traitements et niveaux d'alerte.
 - Fraud Detection Service communique avec Data Preparation Service pour extraire les données pertinentes des sources de données spécifiées.
-- Data Preparation Service communique avec Transaction Analysis Service pour envoyer les données préparées.
-- Transaction Analysis Service communique avec Alert Service pour envoyer les résultats d'analyse.
+- Fraud Detection Service communique avec Transaction Analysis Service pour envoyer les données et les traitements.**
+- Fraud Detection Service communique avec Alert Service pour envoyer le resultat de l'analyse.
 - Alert Service communique avec Parameter Service pour extraire les associations entre les résultats d'analyse et les niveaux d'alerte.
 - Alert Service communique avec lui-même pour analyser les résultats d'analyse et générer des alertes.
-
 
 ### Diagramme de sequence :
 
