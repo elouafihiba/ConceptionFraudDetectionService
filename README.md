@@ -186,7 +186,7 @@ Le processus de demande de modification du paramétrage comprend plusieurs étap
 
 Le diagramme d'état transition ci-dessous illustre les différents états qu'une demande de modification de paramétrage peut traverser pendant le processus de validation :
 
-![fraud detection system](./diagrammes/state machine.png)
+![fraud detection system](./diagrammes/statemachine.png)
 
 
 
