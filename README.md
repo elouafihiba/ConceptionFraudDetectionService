@@ -164,9 +164,29 @@ Cette classe comprend les attributs suivants :
 
 ![fraud detection system](./diagrammes/sequence.png)
 
+## 4.Modification du Paramétrage avec Workflow de Validation
 
+### But de section 
+Cette section vise à décrire le processus de demande de modification du paramétrage du système de détection de fraude, incluant un workflow de validation pour garantir l'intégrité et la sécurité du système.
 
+### Processus de Demande de Modification
 
+Le processus de demande de modification du paramétrage comprend plusieurs étapes, depuis la création de la demande jusqu'à sa validation et son application dans le système. Voici une description détaillée de chaque étape :
+
+#### 1. Création de la demande :
+* Le processus commence par la création d’une demande. Un utilisateur ou un administrateur initie cette demande en identifiant les modifications nécessaires dans le paramétrage du système de détection de fraude.
+#### 2. Envoi pour signature :
+* Une fois la demande créée, elle est envoyée pour signature. Les parties concernées (par exemple, les responsables de la sécurité ou les gestionnaires) doivent approuver ou rejeter la demande.
+* Si la demande est annulée avant d’être signée, elle est marquée comme “ANNULÉE”. Cela peut se produire si les conditions changent ou si la demande n’est plus nécessaire.
+#### 3. En cours de signature :
+* Si la demande est en cours de signature, elle est dans l’état “EN COURS DE SIGNATURE”. Elle attend l’approbation des parties concernées.
+* Si la demande est rejetée, elle est marquée comme “REJETÉE”. Cela peut se produire si la demande ne répond pas aux critères de sécurité ou si elle est jugée inappropriée.
+#### 4. Signature de la demande :
+* Une fois que toutes les parties concernées ont signé la demande, elle est marquée comme “SIGNÉE”. Cela signifie que le changement de paramétrage peut être effectué en toute sécurité.
+
+Le diagramme d'état transition ci-dessous illustre les différents états qu'une demande de modification de paramétrage peut traverser pendant le processus de validation :
+
+![fraud detection system](./diagrammes/state machine.png)
 
 
 
