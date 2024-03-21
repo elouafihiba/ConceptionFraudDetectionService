@@ -220,6 +220,39 @@ détaillées sur l'événement telles que l'identifiant, le type et l'horodatage
 dans la liste contient des détails tels que l'identifiant, le montant, la devise, l'horodatage, 
 ainsi que des informations sur l'expéditeur et le destinataire.
 
+### exemple
+
+```json
+{
+  "event": {
+    "id": "123456",
+    "type": "TransactionDeclined",
+    "timestamp": "2024-03-21T12:00:00Z",
+    "description": "Transaction declined due to insufficient funds."
+  },
+  "recentTransactions": [
+    {
+      "transaction_id": "789012",
+      "amount": 100.50,
+      "currency": "USD",
+      "timestamp": "2024-03-21T11:30:00Z",
+      "sender": { "name": "John Doe", "account_number": "123456789", "bank_code": "ABC123" },
+      "receiver": { "name": "Jane Smith", "account_number": "987654321", "bank_code": "XYZ789" }
+    },
+    {
+      "transaction_id": "789013",
+      "amount": 50.25,
+      "currency": "USD",
+      "timestamp": "2024-03-21T11:45:00Z",
+      "sender": { "name": "Alice Johnson", "account_number": "111122223333", "bank_code": "DEF456" },
+      "receiver": { "name": "Bob Brown", "account_number": "444455556666", "bank_code": "GHI789" }
+    }
+  ]
+}
+```
+
+
+
 ### Sortie:
 
 - AnalysisResult : Le résultat de l'analyse, qui comprend des informations sur la fréquence des transactions 
