@@ -200,9 +200,10 @@ Cette API est conçue pour vérifier la fréquence des transactions en analysant
 ```
 
 
-## Remarques
+## Remarques:
 
 Lorsqu'il s'agit de transactions financières, il est important de garantir la conformité aux réglementations et aux normes de confidentialité pertinentes. Les informations personnelles identifiables (IPI) telles que les numéros de compte, les noms ou les adresses doivent être exclues des données de transaction pour protéger la vie privée des utilisateurs et la sécurité des données.
+
 ---
 # Documentation de la méthode : analyzeTransactionsPostCriticalEvent():
 
