@@ -224,28 +224,30 @@ ainsi que des informations sur l'expéditeur et le destinataire.
 
 ```json
 {
-  "event": {
+  "criticalEvent": {
     "id": "123456",
     "type": "TransactionDeclined",
     "timestamp": "2024-03-21T12:00:00Z",
-    "description": "Transaction declined due to insufficient funds."
-  },
+    "description": {
+      "code": "INSUFFICIENT_FUNDS",
+      "body": "Transaction declined due to insufficient funds."
+      },
   "recentTransactions": [
     {
       "transaction_id": "789012",
       "amount": 100.50,
-      "currency": "USD",
+      "currency": "MAD",
       "timestamp": "2024-03-21T11:30:00Z",
-      "sender": { "name": "John Doe", "account_number": "123456789", "bank_code": "ABC123" },
-      "receiver": { "name": "Jane Smith", "account_number": "987654321", "bank_code": "XYZ789" }
+      "sender": { "name": "Mohamed Sakhi ", "account_number": "123456789", "bank_code": "ABC123" },
+      "receiver": { "name": "Ali Janane", "account_number": "987654321", "bank_code": "XYZ789" }
     },
     {
       "transaction_id": "789013",
       "amount": 50.25,
       "currency": "USD",
       "timestamp": "2024-03-21T11:45:00Z",
-      "sender": { "name": "Alice Johnson", "account_number": "111122223333", "bank_code": "DEF456" },
-      "receiver": { "name": "Bob Brown", "account_number": "444455556666", "bank_code": "GHI789" }
+      "sender": { "name": "Saad Lachgar", "account_number": "111122223333", "bank_code": "DEF456" },
+      "receiver": { "name": "Karim Mohamed", "account_number": "444455556666", "bank_code": "GHI789" }
     }
   ]
 }
@@ -255,10 +257,8 @@ ainsi que des informations sur l'expéditeur et le destinataire.
 
 ### Sortie:
 
-- AnalysisResult : Le résultat de l'analyse, qui comprend des informations sur la fréquence des transactions 
-et leur conformité par rapport aux seuils définis. Il peut également contenir des recommandations ou des actions
-à prendre en fonction de l'événement critique et des transactions récentes 
-analysées.
+- report : Le résultat de l'analyse, qui comprend des informations sur la fréquence des transactions 
+et leur conformité par rapport aux seuils définis.
 
 ### exemple
 
@@ -273,9 +273,7 @@ analysées.
 "count": 20,
 "amount": 3500.75
 }
-},
-"recommendation": "Continue monitoring for any unusual activity."
-}
+}}
 ```
 
 -----
