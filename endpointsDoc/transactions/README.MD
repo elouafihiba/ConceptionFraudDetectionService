@@ -128,7 +128,7 @@ Cette API est conçue pour vérifier la fréquence des transactions en analysant
         *   `total_amount` : Montant total des transactions analysées.
         *   `thresholds_exceeded` : Indicateur de dépassement des seuils (par heure et par jour).
 
-### Format du Message d'entrée
+### Format du Message de sortie
 
 ![fraud detection system](./diagrammes/output.png)*format de message de sortie*
 
