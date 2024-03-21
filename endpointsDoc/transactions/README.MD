@@ -274,7 +274,6 @@ analysées.
 "amount": 3500.75
 }
 },
-"conformité": "compliant",
 "recommendation": "Continue monitoring for any unusual activity."
 }
 ```
