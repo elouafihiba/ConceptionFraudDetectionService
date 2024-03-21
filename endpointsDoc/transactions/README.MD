@@ -205,7 +205,7 @@ Cette API est conçue pour vérifier la fréquence des transactions en analysant
 Lorsqu'il s'agit de transactions financières, il est important de garantir la conformité aux réglementations et aux normes de confidentialité pertinentes. Les informations personnelles identifiables (IPI) telles que les numéros de compte, les noms ou les adresses doivent être exclues des données de transaction pour protéger la vie privée des utilisateurs et la sécurité des données.
 
 ---
-# Documentation de la méthode : analyzeTransactionsPostCriticalEvent():
+# Documentation de la méthode:analyzeTransactionsPostCriticalEvent():
 
 ## Aperçu:
 
@@ -214,15 +214,15 @@ Elle prend en compte les transactions récentes et l'événement critique spéci
 
 ### Entrées:
 
-- `event: CriticalEvent `: L'événement critique qui a déclenché l'appel à cette méthode. Il contient des informations 
+- event: CriticalEvent : L'événement critique qui a déclenché l'appel à cette méthode. Il contient des informations 
 détaillées sur l'événement telles que l'identifiant, le type et l'horodatage.
-- `recentTransactions: Transaction[] `: Une liste des transactions récentes pour l'analyse. Chaque transaction 
+- recentTransactions: Transaction[] : Une liste des transactions récentes pour l'analyse. Chaque transaction 
 dans la liste contient des détails tels que l'identifiant, le montant, la devise, l'horodatage, 
 ainsi que des informations sur l'expéditeur et le destinataire.
 
 ### Sortie:
 
-- `AnalysisResult `: Le résultat de l'analyse, qui comprend des informations sur la fréquence des transactions 
+- AnalysisResult : Le résultat de l'analyse, qui comprend des informations sur la fréquence des transactions 
 et leur conformité par rapport aux seuils définis. Il peut également contenir des recommandations ou des actions
 à prendre en fonction de l'événement critique et des transactions récentes 
 analysées.
