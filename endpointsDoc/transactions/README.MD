@@ -259,6 +259,26 @@ ainsi que des informations sur l'expéditeur et le destinataire.
 et leur conformité par rapport aux seuils définis. Il peut également contenir des recommandations ou des actions
 à prendre en fonction de l'événement critique et des transactions récentes 
 analysées.
+
+### exemple
+
+```json
+{
+"transaction_frequency": {
+"hourly": {
+"count": 5,
+"amount": 800.50
+},
+"daily": {
+"count": 20,
+"amount": 3500.75
+}
+},
+"compliance": "compliant",
+"recommendation": "Continue monitoring for any unusual activity."
+}
+```
+
 -----
 Cette méthode permet d'analyser les transactions récentes à la suite d'un événement critique, tel qu'un refus de transaction pour insuffisance
 de fonds. Elle génère un résultat d'analyse qui peut être utilisé pour prendre des décisions ou des mesures appropriées en fonction de la situation.
