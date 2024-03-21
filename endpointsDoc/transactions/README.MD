@@ -214,9 +214,9 @@ Elle prend en compte les transactions récentes et l'événement critique spéci
 
 ### Entrées:
 
-- event: CriticalEvent : L'événement critique qui a déclenché l'appel à cette méthode. Il contient des informations 
+- criticalEvent : L'événement critique qui a déclenché l'appel à cette méthode. Il contient des informations 
 détaillées sur l'événement telles que l'identifiant, le type et l'horodatage.
-- recentTransactions: Transaction[] : Une liste des transactions récentes pour l'analyse. Chaque transaction 
+- recentTransactions[] : Une liste des transactions récentes pour l'analyse. Chaque transaction 
 dans la liste contient des détails tels que l'identifiant, le montant, la devise, l'horodatage, 
 ainsi que des informations sur l'expéditeur et le destinataire.
 
