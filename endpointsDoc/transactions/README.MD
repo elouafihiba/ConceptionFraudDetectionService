@@ -265,16 +265,48 @@ et leur conformité par rapport aux seuils définis.
 
 ```json
 {
-"transaction_frequency": {
-"hourly": {
-"count": 5,
-"amount": 800.50
-},
-"daily": {
-"count": 20,
-"amount": 3500.75
+  "transaction_stats": {
+    "hourly": {
+      "count": 2,
+      "total_amount": 3000
+    }
+  },
+  "recent_transactions": [
+    {
+      "transaction_id": "789012",
+      "amount": 4000,
+      "currency": "MAD",
+      "timestamp": "2024-03-21T11:30:00Z",
+      "sender": { "name": "Mohamed Sakhi ", "account_number": "123456789", "bank_code": "ABC123" },
+      "receiver": { "name": "Ali Janane", "account_number": "987654321", "bank_code": "XYZ789" },
+      "fraud_score": 0.05
+    },
+    {
+      "transaction_id": "789013",
+      "amount": 5000,
+      "currency": "MAD",
+      "timestamp": "2024-03-21T11:45:00Z",
+      "sender": { "name": "Saad Lachgar", "account_number": "111122223333", "bank_code": "DEF456" },
+      "receiver": { "name": "Karim Mohamed", "account_number": "444455556666", "bank_code": "GHI789" },
+      "fraud_score": 0.92
+    }
+  ],
+  "compliance_check": {
+    "thresholds": {
+      "max_daily_amount": 5000,
+      "max_hourly_transactions": 100
+    },
+    "alerts": [
+      {
+        "transaction_id": "789013",
+        "amount": 4600,
+        "reason": "Transaction frequency exceeds hourly ",
+        "fraud_score": 0.92
+      }
+    ]
+  }
 }
-}}
+
 ```
 
 -----
