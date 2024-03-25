@@ -137,7 +137,7 @@ Cette classe comprend les attributs suivants :
 
 ### Diagramme de communication :
 
-![fraud detection system](./diagrammes/communication.png)
+![fraud detection system](./diagrammes/communicationDiagram.png)
 #### Participants (services) :
 
 - Banking System
@@ -162,7 +162,7 @@ Cette classe comprend les attributs suivants :
 
 ### Diagramme de sequence :
 
-![fraud detection system](./diagrammes/sequence.png)
+![fraud detection system](./diagrammes/sequencev2.png)
 
 ## 4.Modification du Paramétrage avec Workflow de Validation
 
