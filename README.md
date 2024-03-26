@@ -189,6 +189,3 @@ Le diagramme d'état transition ci-dessous illustre les différents états qu'un
 ![fraud detection system](./diagrammes/statemachine.png)
 
 
-
-
-
