@@ -56,7 +56,7 @@ Les alertes sont ensuite transmises aux parties concernées pour appliquer les a
 ---
 Ce système modulaire et interconnecté permet une gestion efficace des événements de fraude, en garantissant une détection rapide et précise tout en offrant la flexibilité nécessaire pour s'adapter aux besoins spécifiques de chaque institution financière.
 
-## 3. Conception du Systeme:
+## 3. Conception du Système:
 
 ### Diagramme de use case :
 
@@ -82,7 +82,7 @@ Nous avons adopté une approche qui vise
 
 ### Diagramme de classe :
 
-![fraud detection system](./diagrammes/class.png)
+![fraud detection system](./diagrammes/classdiagram.png)
 
 Ce diagramme de classe représente la définition des règles de gestion.
 
