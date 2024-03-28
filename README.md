@@ -188,4 +188,10 @@ Le diagramme d'état transition ci-dessous illustre les différents états qu'un
 
 ![fraud detection system](./diagrammes/statemachine.png)
 
+## 5.Diagramme de séquence d'analyse pour une transaction critique:
 
+![fraud detection system](./diagrammes/criticaltransaction.png)
+
+## 6.Diagramme de séquence d'analyse d'une transaction refusée:
+
+![fraud detection system](./diagrammes/analyserefusedtransactions.png)
