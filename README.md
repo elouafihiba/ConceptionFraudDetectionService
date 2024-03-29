@@ -1,5 +1,6 @@
 # CONCEPTION ET DEVELOPPEMENT D'UN SYSTEME DE DETECTION DES FRAUDES
 
+<a name="top"></a>
 
 ## Table of Contents
 1. [Contexte du Projet](#contexte-du-projet)
@@ -7,7 +8,7 @@
 3. [Conception du système](#conception-du-systeme)
 4. [Documentation des endpoints](#endpoints-documentation)
 5. [Documentation de préparation des données](#data-preparation-documentation)
-
+---
 ## 1. Contexte du Projet <a name="contexte-du-projet"></a>
 
 Dans le monde dynamique des services bancaires, la sécurité et l'intégrité des transactions sont primordiales. Afin de garantir la détection précoce et efficace des activités frauduleuses, un système de détection de fraude est essentiel. Notre système de détection de fraude est conçu pour répondre à cette nécessité croissante en offrant une solution robuste et adaptable pour les institutions financières.
@@ -24,6 +25,9 @@ Ce qui distingue notre système, c'est sa capacité à être entièrement param�
 
 En permettant une personnalisation approfondie, notre système offre une flexibilité inégalée pour répondre aux besoins spécifiques de chaque institution financière. En détectant rapidement les activités frauduleuses et en fournissant des alertes en temps réel, notre système aide à réduire les risques et à protéger les comptes des clients. Tout en offrant une interface intuitive et conviviale pour la configuration des règles de détection, notre système facilite la gestion et la maintenance continues, garantissant une efficacité opérationnelle maximale.
 
+<div style="text-align: right"><a href="#top">Top</a></div>
+
+---
 ## 2. Vue d'Ensemble du Système <a name="vue-densemble-du-systeme"></a>
 
 Le système de détection de fraude est composé de plusieurs services interconnectés, chacun jouant un rôle crucial dans le processus
@@ -66,6 +70,9 @@ Ce service prend les résultats d'analyse générés par le Transaction Analysis
 Il classe les alertes en fonction de leur gravité et de leur urgence, selon les niveaux d'interprétation définis dans les paramètres.
 Les alertes sont ensuite transmises aux parties concernées pour appliquer les actions correctives nécessaire.
 
+<div style="text-align: right"><a href="#top">Top</a></div>
+
+---
 ## 3. Conception du système <a name="conception-du-systeme"></a>
 
 L’objectif de cet phase est l'identification des besoins et avoir une idée claire
@@ -74,12 +81,20 @@ Nous allons voir quelques types de diagrammes UML pour la modélisation et la co
 
 - [Conception du systeme](diagrammes/README.md)
 
+<div style="text-align: right"><a href="#top">Top</a></div>
+
 ---
 ## 4. endpoints documentation <a name="endpoints-documentation"></a>
 
 - [endpoints documentation](endpointsDoc/transactions/README.MD)
 
+<div style="text-align: right"><a href="#top">Top</a></div>
+
+---
+
 ## 5. data prepation documentation <a name="data-preparation-documentation"></a>
 
 - [data prepation documentation](dataPreparationDoc/README.md)
+
+<div style="text-align: right"><a href="#top">Top</a></div>
 

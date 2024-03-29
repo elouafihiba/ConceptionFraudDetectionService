@@ -1,5 +1,5 @@
-##  Conception du Système:
----
+## Conception du Système:
+
 ### 1.Diagramme de use case :
 
 ![fraud detection system](capture/useCase.png)
