@@ -17,13 +17,13 @@ Ce qui distingue notre système, c'est sa capacité à être entièrement param�
 
 En permettant une personnalisation approfondie, notre système offre une flexibilité inégalée pour répondre aux besoins spécifiques de chaque institution financière. En détectant rapidement les activités frauduleuses et en fournissant des alertes en temps réel, notre système aide à réduire les risques et à protéger les comptes des clients. Tout en offrant une interface intuitive et conviviale pour la configuration des règles de détection, notre système facilite la gestion et la maintenance continues, garantissant une efficacité opérationnelle maximale.
 
-## 2. Vue d'Ensemble du Système
+## 2. Vue d'Ensemble du Système:
 
-Le système de détection de fraude est composé de plusieurs services interconnectés, chacun jouant un rôle crucial dans le processus global de détection et de notification des activités frauduleuses.
+Le système de détection de fraude est composé de plusieurs services interconnectés, chacun jouant un rôle crucial dans le processus
+global de détection et de notification des activités frauduleuses.
 
 ![fraud detection system](ConceptionFraudDetectionSystem/diagrammes/capture/vue-ensemble.png )
 
-*architecture du système*
 
 ### Fraud Detection Service :
 
@@ -59,8 +59,8 @@ Les alertes sont ensuite transmises aux parties concernées pour appliquer les a
 ---
 Ce système modulaire et interconnecté permet une gestion efficace des événements de fraude, en garantissant une détection rapide et précise tout en offrant la flexibilité nécessaire pour s'adapter aux besoins spécifiques de chaque institution financière.
 
-- [Conception du systeme](https://github.com/elouafihiba/ConceptionFraudDetectionSystem/tree/main/diagrammes)
+- [Conception du systeme](diagrammes/README.md)
 
-- [data prepation documentation](https://github.com/elouafihiba/ConceptionFraudDetectionSystem/tree/main/dataPreparationDoc)
+- [data prepation documentation](dataPreparationDoc/README.md)
 
-- [endpoints documentation](https://github.com/elouafihiba/ConceptionFraudDetectionSystem/tree/main/endpointsDoc/transactions)
+- [endpoints documentation](endpointsDoc/transactions/README.MD)
