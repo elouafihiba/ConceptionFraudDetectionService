@@ -59,6 +59,8 @@ Les alertes sont ensuite transmises aux parties concernées pour appliquer les a
 ---
 Ce système modulaire et interconnecté permet une gestion efficace des événements de fraude, en garantissant une détection rapide et précise tout en offrant la flexibilité nécessaire pour s'adapter aux besoins spécifiques de chaque institution financière.
 
+---
+
 - [Conception du systeme](diagrammes/README.md)
 
 - [data prepation documentation](dataPreparationDoc/README.md)
