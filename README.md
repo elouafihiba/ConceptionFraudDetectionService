@@ -1,11 +1,11 @@
 # CONCEPTION ET DEVELOPPEMENT D'UN SYSTEME DE DETECTION DES FRAUDES
 
 
-## 1. Introduction au Projet:
+## 1. Contexte du Projet:
 
 Dans le monde dynamique des services bancaires, la sécurité et l'intégrité des transactions sont primordiales. Afin de garantir la détection précoce et efficace des activités frauduleuses, un système de détection de fraude est essentiel. Notre système de détection de fraude est conçu pour répondre à cette nécessité croissante en offrant une solution robuste et adaptable pour les institutions financières.
 
-### Objectif du Projet
+### Objectif :
 
 Le système de détection de fraude a pour objectif principal de recevoir, analyser et signaler les événements provenant des systèmes bancaires. Ces événements comprennent une gamme variée de transactions, de mouvements de fonds et d'activités financières. Notre système est conçu pour identifier les schémas et les comportements suspects, permettant ainsi aux institutions financières de réagir rapidement pour prévenir les risques liées à la fraude.
 
