@@ -31,6 +31,9 @@ global de détection et de notification des activités frauduleuses.
 
 ![fraud detection system](diagrammes/capture/vue-ensemble.png )
 
+Ce système modulaire et interconnecté permet une gestion efficace des événements de fraude, en garantissant une détection rapide 
+et précise tout en offrant la flexibilité nécessaire pour s'adapter aux besoins spécifiques de chaque institution financière.
+
 
 ### Fraud Detection Service :
 
@@ -63,10 +66,6 @@ Ce service prend les résultats d'analyse générés par le Transaction Analysis
 Il classe les alertes en fonction de leur gravité et de leur urgence, selon les niveaux d'interprétation définis dans les paramètres.
 Les alertes sont ensuite transmises aux parties concernées pour appliquer les actions correctives nécessaire.
 
----
-Ce système modulaire et interconnecté permet une gestion efficace des événements de fraude, en garantissant une détection rapide et précise tout en offrant la flexibilité nécessaire pour s'adapter aux besoins spécifiques de chaque institution financière.
-
----
 ## 3. Conception du système <a name="conception-du-systeme"></a>
 
 L’objectif de cet phase est l'identification des besoins et avoir une idée claire
