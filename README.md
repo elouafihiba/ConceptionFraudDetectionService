@@ -22,7 +22,7 @@ En permettant une personnalisation approfondie, notre système offre une flexibi
 Le système de détection de fraude est composé de plusieurs services interconnectés, chacun jouant un rôle crucial dans le processus
 global de détection et de notification des activités frauduleuses.
 
-![fraud detection system](ConceptionFraudDetectionSystem/diagrammes/capture/vue-ensemble.png )
+![fraud detection system](diagrammes/capture/vue-ensemble.png )
 
 
 ### Fraud Detection Service :
