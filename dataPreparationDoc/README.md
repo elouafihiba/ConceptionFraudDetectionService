@@ -3,8 +3,9 @@
 ---
 ## Objectif:
 
-Ce service fait partie intégrante de notre système de détection de fraude et a pour objectif de préparer les données 
+Ce service fait une partie intégrante de notre système de détection de fraude et a pour objectif de préparer les données 
 nécessaires à l'analyse des transactions et à la détection de fraudes.
+
 ---
 ## Préparation des Données:
 
@@ -13,16 +14,19 @@ les données pertinentes à l'analyse à partir de sources externes telles que l
 externes. Cette approche offre une flexibilité et une efficacité accrues pour la détection des fraudes.
 
 ### Avantages :
+
 - Flexibilité : Possibilité d'adapter les données à différents formats et sources.
 - Réduction du Stockage : Minimisation des besoins de stockage en récupérant les données au besoin.
 - Compatibilité : Fonctionnement efficace même pour des applications de petite taille.
 
 ### Inconvénients :
+
 - Dépendance Externe : Risques associés à la disponibilité et à l'intégrité des sources externes.
 - Latence Potentielle : Possibilité de retard lors de la récupération de données depuis des sources distantes.
 - Complexité de Configuration : Nécessité d'une configuration précise pour chaque source de données.
 ---
-## Stockage des Transactions dans une Base de Données Propriétaire
+## Stockage des Transactions dans une Base de Données Propriétaire:
+
 Une alternative consiste à stocker toutes les transactions dans une base de données propriétaire, offrant ainsi une analyse complète des schémas de fraude.
 
 ### Avantages :
@@ -38,7 +42,9 @@ Une alternative consiste à stocker toutes les transactions dans une base de don
 - Maintenance Continue : Besoin d'une maintenance régulière pour assurer la disponibilité et la performance de la base de données.
 
 ---
-## Choix de la Base de Données
+## Choix de la Base de Données: 
 
 Pour cette approche, le choix d'une base de données orientée graphe, telle que Neo4j ou Amazon Neptune, est recommandé 
 pour ses capacités d'adaptabilité, de performance et de gestion des grands volumes de données.
+
+---
