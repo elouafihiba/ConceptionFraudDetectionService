@@ -1,6 +1,6 @@
 ##  Conception du Système:
-
-### Diagramme de use case :
+---
+### 1.Diagramme de use case :
 
 ![fraud detection system](capture/useCase.png)
 
@@ -21,9 +21,9 @@ les fonctionnalités clés du système.
   de fraude en fournissant des données pertinentes pour l'analyse.
   Nous avons adopté une approche qui vise
   à garantir la standardisation et l'interopérabilité avec différents systèmes bancaires.
+---
 
-
-### Diagramme de classe :
+### 2-Diagramme de classe :
 
 ![fraud detection system](capture/classdiagram.png)
 
@@ -77,8 +77,9 @@ Cette classe comprend les attributs suivants :
 
 - id : L'identifiant unique du niveau d'alerte.
 - name : Le nom du niveau d'alerte.
+---
 
-### Diagramme de communication :
+### 3-Diagramme de communication :
 
 ![fraud detection system](capture/communicationDiagram.png)
 #### Participants (services) :
@@ -103,11 +104,23 @@ Cette classe comprend les attributs suivants :
 - Alert Service communique avec Parameter Service pour extraire les associations entre les résultats d'analyse et les niveaux d'alerte.
 - Alert Service fait un traitement génèrent des alertes.
 
-### Diagramme de sequence :
+---
+
+### 4-Diagramme de sequence :
 
 ![fraud detection system](capture/sequencev2.png)
 
-## 4.Modification du Paramétrage avec Workflow de Validation
+#### 4.1-Diagramme de séquence d'analyse pour une transaction critique:
+
+![fraud detection system](capture/criticaltransaction.png)
+
+#### 4.2-.Diagramme de séquence d'analyse d'une transaction refusée:
+
+![fraud detection system](capture/analyserefusedtransactions.png)
+
+---
+
+## 5.Diagramme états-transitions (State diagram) de Modification du Paramétrage:
 
 ### But de section
 Cette section vise à décrire le processus de demande de modification du paramétrage du système de détection de fraude, incluant un workflow de validation pour garantir l'intégrité et la sécurité du système.
@@ -131,10 +144,3 @@ Le diagramme d'état transition ci-dessous illustre les différents états qu'un
 
 ![fraud detection system](capture/statemachine.png)
 
-## 5.Diagramme de séquence d'analyse pour une transaction critique:
-
-![fraud detection system](capture/criticaltransaction.png)
-
-## 6.Diagramme de séquence d'analyse d'une transaction refusée:
-
-![fraud detection system](capture/analyserefusedtransactions.png)
