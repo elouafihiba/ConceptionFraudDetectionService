@@ -195,3 +195,7 @@ Le diagramme d'état transition ci-dessous illustre les différents états qu'un
 ## 6.Diagramme de séquence d'analyse d'une transaction refusée:
 
 ![fraud detection system](./diagrammes/analyserefusedtransactions.png)
+
+- [data prepation documentation](https://github.com/elouafihiba/ConceptionFraudDetectionSystem/tree/main/dataPreparationDoc)
+
+- [endpoints documentation](https://github.com/elouafihiba/ConceptionFraudDetectionSystem/tree/main/endpointsDoc/transactions)
