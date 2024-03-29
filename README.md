@@ -60,7 +60,7 @@ Les alertes sont ensuite transmises aux parties concernées pour appliquer les a
 Ce système modulaire et interconnecté permet une gestion efficace des événements de fraude, en garantissant une détection rapide et précise tout en offrant la flexibilité nécessaire pour s'adapter aux besoins spécifiques de chaque institution financière.
 
 ---
-## 2. Conception du système:
+## 3. Conception du système:
 L’objectif de cet phase est l'identification des besoins et avoir une idée claire
 sur le contenu de ce projet ainsi que les fonctionnalités fournies par notre solution.
 Nous allons voir quelques types de diagrammes UML pour la modélisation et la conception de systèmes.
